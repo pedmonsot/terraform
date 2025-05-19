@@ -4,11 +4,11 @@
 
 Al principio, al ejecutar `terraform init`, surgió un problema al intentar usar el proveedor `virtualbox` desde el registro oficial de Terraform. El error indicaba que no existía dicho proveedor en el repositorio de HashiCorp, por lo que fue necesario replantear el enfoque utilizando Vagrant como intermediario.
 
-![imagen 1]([./imagenes/2025-05-16_18-52.png](https://github.com/pedmonsot/terraform/blob/master/5.1/images/2025-05-16_18-52.png))
+![image](https://github.com/user-attachments/assets/831b9098-0fa8-44e9-80e8-195fed89a7f6)
 
 Una vez corregido el archivo `main.tf` para trabajar con `null_resource` y `local-exec`, la inicialización de Terraform se completó correctamente, permitiendo continuar con la planificación y despliegue de la máquina virtual.
 
-![imagen 2](./imagenes/2025-05-16_19-02.png)
+![imagen 2](https://github.com/pedmonsot/terraform/blob/master/5.1/images/2025-05-16_19-02.png)
 
 Después del despliegue, se verificó el correcto arranque de la máquina virtual utilizando el comando `vagrant ssh`. Esto permitió acceder al sistema Ubuntu 22.04.5 dentro de VirtualBox y confirmar que estaba activo y funcionando correctamente.
 
