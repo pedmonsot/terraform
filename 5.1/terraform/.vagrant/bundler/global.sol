@@ -1,0 +1,1 @@
+{"dependencies":[["vagrant-reload",["= 0.0.1"]],["vagrant-vmware-desktop",["= 3.0.5"]]],"checksum":"37f883e35d548f57a8d5c764033ed8e1a485925ced2d29cd4b37722f5f604fbc","vagrant_version":"2.4.5"}

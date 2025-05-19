@@ -1,0 +1,14 @@
+- name: Configurar VM Ubuntu 24.04
+  hosts: web
+  become: yes
+  tasks:
+    - name: Update & Upgrade
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+    - name: Instalar Apache
+      apt:
+        name: apache2
+        state: present
+

@@ -1,0 +1,26 @@
+- name: Configurar servidor web con contenido personalizado
+  hosts: web
+  become: yes
+  tasks:
+    - name: Instalar Apache
+      apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+    - name: Crear index.html con mensaje personalizado
+      copy:
+        dest: /var/www/html/index.html
+        content: "Ansible rocks"
+
+    - name: Reiniciar el servicio Apache
+      service:
+        name: apache2
+        state: restarted
+
+    - name: Verificar el contenido usando curl
+      command: curl http://localhost
+      register: resultado
+
+    - debug:
+        var: resultado.stdout
