@@ -37,8 +37,8 @@ Después de todos los pasos anteriores, la máquina virtual apareció en Virtual
 # 5.2
 
 ## Configurar una máquina virtual Ubuntu 24.04 en Virtualbox mediante Ansible.
-  -Realizar update & upgrade del sistema de forma automática.
-  -Instalar el servicio apache.
+    -Realizar update & upgrade del sistema de forma automática.
+    -Instalar el servicio apache.
 
 Lo primero fue inicializar el entorno de Terraform en la nueva carpeta correspondiente.
 
@@ -79,8 +79,8 @@ Por último, confirmamos desde VirtualBox que la máquina virtual `ubuntu24` seg
 # 5.3
 
 ## Configurar una máquina virtual Ubuntu 24.04 en Virtualbox mediante Ansible.
-  -Crear un index.html con el contenido: ‘Ansible rocks’ en el directorio del servidor web para poder ser mostrado y reiniciar el servicio.
-  -Realizar un curl al servidor web y verificar el mensaje ‘Ansible rocks’.
+    -Crear un index.html con el contenido: ‘Ansible rocks’ en el directorio del servidor web para poder ser mostrado y reiniciar el servicio.
+    -Realizar un curl al servidor web y verificar el mensaje ‘Ansible rocks’.
 
 En este apartado, se reutilizó el mismo procedimiento con Terraform explicado en el punto anterior para crear una nueva máquina virtual. Al igual que antes, se utilizaron los comandos `terraform init` y `terraform apply` para iniciar el entorno y lanzar la máquina desde el `Vagrantfile`.
 
