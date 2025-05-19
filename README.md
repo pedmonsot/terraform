@@ -18,7 +18,7 @@ Una vez todo listo, se ejecutó `terraform apply` para aplicar los cambios defin
 
 ![imagen 4](https://github.com/pedmonsot/terraform/blob/master/5.1/images/2025-05-16_19-28_1.png)
 
-Durante el proceso apareció un problema con los plugins de Vagrant. Concretamente, uno de ellos (`vagrant-reload`) no estaba disponible o presentaba conflictos de versión. Este error interrumpió el proceso de despliegue.
+Durante el proceso apareció un problema con los plugins de Vagrant. Concretamente, uno de ellos `vagrant-reload` no estaba disponible o presentaba conflictos de versión. Este error interrumpió el proceso de despliegue.
 
 ![imagen 5](https://github.com/pedmonsot/terraform/blob/master/5.1/images/2025-05-16_19-29.png)
 
@@ -26,13 +26,13 @@ Para resolverlo, se ejecutó `vagrant plugin repair`, lo cual inició el proceso
 
 ![imagen 6](https://github.com/pedmonsot/terraform/blob/master/5.1/images/2025-05-16_19-30.png)
 
-Finalmente, se procedió a ejecutar `vagrant plugin expunge --reinstall` para forzar la eliminación y reinstalación de todos los plugins de Vagrant. Aunque al principio se rechazó la opción por defecto (`N`), al repetir el proceso, se logró completar la reinstalación correctamente.
+Finalmente, se procedió a ejecutar `vagrant plugin expunge --reinstall` para forzar la eliminación y reinstalación de todos los plugins de Vagrant. Aunque al principio se rechazó la opción por defecto `N`, al repetir el proceso, se logró completar la reinstalación correctamente.
 
-![imagen 7]((https://github.com/pedmonsot/terraform/blob/master/5.1/images/2025-05-16_19-30_1.png))
+![imagen 7](https://github.com/pedmonsot/terraform/blob/master/5.1/images/2025-05-16_19-30_1.png)
 
 Después de todos los pasos anteriores, la máquina virtual apareció en VirtualBox en estado **"Corriendo"**, lo que confirmó que el despliegue fue exitoso y que el entorno estaba listo para ser configurado posteriormente con Ansible.
 
-![imagen 8](./imagenes/2025-05-16_19-36.png](https://github.com/pedmonsot/terraform/blob/master/5.1/images/2025-05-16_19-36.png))
+![imagen 8](https://github.com/pedmonsot/terraform/blob/master/5.1/images/2025-05-16_19-36.png)
 
 # 5.2
 
@@ -48,7 +48,7 @@ A continuación, ejecutamos `terraform apply` para lanzar la máquina virtual de
 
 ![imagen 2](https://github.com/pedmonsot/terraform/blob/master/5.2/images/2025-05-19_11-52.png)
 
-Una vez aceptado el plan (`yes`), comenzó el proceso de despliegue. Tras unos segundos, Terraform informó que el recurso fue creado correctamente, confirmando que la máquina virtual fue puesta en marcha con éxito.
+Una vez aceptado el plan `yes`, comenzó el proceso de despliegue. Tras unos segundos, Terraform informó que el recurso fue creado correctamente, confirmando que la máquina virtual fue puesta en marcha con éxito.
 
 ![imagen 3](https://github.com/pedmonsot/terraform/blob/master/5.2/images/2025-05-19_11-52_1.png)
 
