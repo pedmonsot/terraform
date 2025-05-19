@@ -4,7 +4,7 @@
 
 Al principio, al ejecutar `terraform init`, surgió un problema al intentar usar el proveedor `virtualbox` desde el registro oficial de Terraform. El error indicaba que no existía dicho proveedor en el repositorio de HashiCorp, por lo que fue necesario replantear el enfoque utilizando Vagrant como intermediario.
 
-![imagen 1](./imagenes/2025-05-16_18-52.png)
+![imagen 1]([./imagenes/2025-05-16_18-52.png](https://github.com/pedmonsot/terraform/blob/master/5.1/images/2025-05-16_18-52.png))
 
 Una vez corregido el archivo `main.tf` para trabajar con `null_resource` y `local-exec`, la inicialización de Terraform se completó correctamente, permitiendo continuar con la planificación y despliegue de la máquina virtual.
 
